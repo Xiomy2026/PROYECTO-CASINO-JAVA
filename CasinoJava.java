@@ -34,32 +34,75 @@ public class CasinoJava {
             switch (opcion) {
                 
                 case 1:
-                System.out.println("Elegiste Lanzar Dado");
+                if (monedas < 10) {
+                    System.out.println("\n No tienes suficientes monedas \n para jugar.");
+                    break;
+                }
+                monedas = (monedas - 10);
+                partidas++;
+                System.out.println(" Elegiste Lanzar Dado");
                 break;
+                
                 case 2:
-                System.out.println("Elegiste Lanzar Moneda");
+                if (monedas < 10) {
+                    System.out.println("\n No tienes suficientes monedas \n para jugar.");
+                    break;
+                }
+                monedas = (monedas - 10);
+                partidas++;
+                System.out.println(" Elegiste Lanzar Moneda");
                 break;
+                
                 case 3:
-                System.out.println("Elegiste Tragamonedas");
+                if (monedas < 10) {
+                    System.out.println("\n No tienes suficientes monedas \n para jugar.");
+                    break;
+                }
+                monedas = (monedas - 10);
+                partidas++;
+                System.out.println(" Elegiste Tragamonedas");
                 break;
+                
                 case 4:
-                System.out.println("Elegiste Ruleta");
+                if (monedas < 10) {
+                    System.out.println("\n No tienes suficientes monedas \n para jugar.");
+                    break;
+                }
+                monedas = (monedas - 10);
+                partidas++;
+                System.out.println(" Elegiste Ruleta");
                 break;
+                
                 case 5:
+                if (monedas < 10) {
+                    System.out.println("\n No tienes suficientes monedas \n para jugar.");
+                    break;
+                }
+                monedas = (monedas - 10);
+                partidas++;
                 System.out.println("Elegiste Piedra, Papel o Tijera");
                 break;
+                
                 case 6:
-                System.out.println("Elegiste Carrera de Caballos");
+                if (monedas < 10) {
+                    System.out.println("\n No tienes suficientes monedas \n para jugar.");
+                    break;
+                }
+                monedas = (monedas - 10);
+                partidas++;
+                System.out.println(" Elegiste Carrera de Caballos");
                 break;
+                
                 case 7:
-                System.out.println("Elegiste Ver Estadísticas");
+                System.out.println(" Elegiste Ver Estadísticas");
                 break;
+                
                 case 8:
-                System.out.println("¡Gracias por jugar!");
+                System.out.println(" ¡Gracias por jugar!");
                 break;
                 
                 default:
-                System.out.println("Opción no válida.");
+                System.out.println(" Opción no válida.");
                 break;
             }
             System.out.println();
