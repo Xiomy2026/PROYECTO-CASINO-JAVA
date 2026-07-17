@@ -41,6 +41,28 @@ public class CasinoJava {
                 monedas = (monedas - 10);
                 partidas++;
                 System.out.println(" Elegiste Lanzar Dado");
+                
+                int dado = rd.nextInt(6) + 1;
+                System.out.println(" Resultado: " + dado);
+                
+                if (dado == 6) {
+                    monedas += 30;
+                    victorias++;
+                    System.out.println(" ¡Ganaste 30 monedas!");
+                }
+                else if (dado == 5) {
+                    monedas += 20;
+                victorias++;
+                System.out.println(" ¡Ganaste 20 monedas!");
+                }
+                else if (dado == 4) {
+                    monedas += 10;
+                victorias++;
+                System.out.println(" ¡Ganaste 10 monedas!");
+                }else {
+                derrotas++;
+                    System.out.println(" No ganaste monedas.");
+                }
                 break;
                 
                 case 2:
