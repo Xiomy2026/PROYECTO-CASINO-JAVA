@@ -120,7 +120,7 @@ public class CasinoJava {
                 break;
                 
                 case 8:
-                System.out.println(" ¡Gracias por jugar!");
+                System.out.println(" ¡Gracias por jugar Casino Java!");
                 break;
                 
                 default:
